@@ -26,5 +26,5 @@ ROUTES.forEach(route => {
 
 
 app.listen(port, () => {
-    console.log(`server started at http://localhost:${port}`);
+    console.log(`server started at https://final0project1server.herokuapp.com/`);
 });
