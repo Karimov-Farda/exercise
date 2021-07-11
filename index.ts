@@ -18,13 +18,13 @@ export const app = express();
 app.use(cors());
 app.use(express.json());
 
-const port = 8805;
+const PORT = process.env.PORT || 8805;
 
 ROUTES.forEach(route => {
     app.use(route.path, route.router);
 })
 
 
-app.listen(port, () => {
-    console.log(`server started at https://final0project1server.herokuapp.com/`);
+app.listen(PORT, () => {
+    console.log(`Server is listening on port ${PORT}...`);
 });
